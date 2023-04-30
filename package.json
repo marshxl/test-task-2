@@ -1,0 +1,23 @@
+{
+  "name": "my-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "npx next build",
+    "start": "npx next start",
+    "build-dev": "npx next build && next dev",
+    "build-start": "npx next build && npx next start",
+    "build-watch-dev": "npx nodemon --exec \"npm run build-dev\"",
+    "build-watch-prod": "npx nodemon --exec \"npm run build-start\"",
+    "compose-up": "docker-compose up --build --force-recreate"
+  },
+  "dependencies": {
+    "next": "13.3.2",
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.22"
+  }
+}
